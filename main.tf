@@ -24,7 +24,7 @@ resource "azurerm_subnet" "internal" {
   virtual_network_name = "${azurerm_virtual_network.main.name}"
   address_prefix       = "10.0.2.0/24"
 }
-
+/*
 resource "azurerm_network_interface" "main" {
   name                = "testvm1-nic"
   location            = "${azurerm_resource_group.main.location}"
@@ -75,3 +75,4 @@ resource "azurerm_virtual_machine" "main" {
     environment = "staging"
   }
 }
+*/
